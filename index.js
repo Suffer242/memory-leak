@@ -8,7 +8,7 @@ function  loop(showBug) {
 
     while (true) {
 
-        let xml = fs.readFileSync('./data.xml', 'utf8');  
+        let xml = fs.readFileSync('./testdata/data.xml', 'utf8');  
         let json = Array.from(xml.matchAll(/<listener .*?>([\s\S]*?)<\/listener>/g));
 
          let first = json[0][1];
